@@ -1,1 +1,8 @@
-
+# X variable.
+x =  -1
+# Float statement.
+x = float(x)
+# Variable y created with calculation to solve expression.
+y = 3 * x**3 - 2 *x**2 + 3 * x - 1
+# Displays answer to expression when value of x variable is changed.
+print("y =", y)

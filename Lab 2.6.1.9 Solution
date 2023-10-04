@@ -1,0 +1,10 @@
+# Variables created with values.
+a=3
+b=5
+# Calculation strings below.
+print ("3*5=", a*b)
+print ("3/5=", a/b)
+print ("3+5=", a+b)
+print ("3-5=", a-b)
+# New line to display message.
+print("\nThat's all, folks!")

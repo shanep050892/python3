@@ -1,11 +1,16 @@
+# Lab on Apples, Lab 2.4.1.7
+
+# variable john assigned 3
 john = 3
+# variable mary assigned 5
 mary = 5
+# variable adam assigned 6
 adam = 6
-
+# print ouput of variables serperated with commas.
 print (john,",", mary,"," ,adam)
-
+# Total appales variable created using some of previous variables.
 total_apples = john+mary+adam
-
+# Output of total_apples variable.
 print(total_apples)
-
+# As above, but incorporating text to display answer.
 print("Total number of apples:",total_apples)

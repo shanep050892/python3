@@ -1,10 +1,10 @@
 # Variables created with values.
-a=3
-b=5
+a = float(input("Enter value for a:"))
+b = float(input("Enter value for b:"))
 # Calculation strings below.
-print ("3*5=", a*b)
-print ("3/5=", a/b)
-print ("3+5=", a+b)
-print ("3-5=", a-b)
+print ("Multiplication =", a*b)
+print ("Division =", a/b)
+print ("Addition =", a+b)
+print ("Subtraction =", a-b)
 # New line to display message.
 print("\nThat's all, folks!")

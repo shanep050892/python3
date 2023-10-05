@@ -1,10 +1,11 @@
+# Variable created with manual inut required.
 income = float(input("Enter the annual income: "))
-
+# Created if statement in relation to income tax with conversion calculations.
 if income < 85528:
 	tax = income * 0.18 - 556.02
 else:
 	tax = (income - 85528) * 0.32 + 14839.02
-
+# Second if argument to return 0 value if tax variable is less than zero.
 if tax < 0.0:
 	tax = 0.0
 

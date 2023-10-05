@@ -1,0 +1,9 @@
+name = input("Enter flower name: ")
+# Insert first "if" statement
+if name == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+# As above, but modified to react to the lower case word.
+elif name == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not", name + "!")

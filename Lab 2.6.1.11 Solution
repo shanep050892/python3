@@ -1,0 +1,16 @@
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# Code to calculate the end time
+
+end_hours = hour + (mins+dura)//60
+end_minutes = (mins+dura) % 60
+
+# Place end time in 24hr format.
+
+end_hours %=24
+
+# Display the end time
+
+print (f"End Time: {end_hours:02d}:{end_minutes:02d}")

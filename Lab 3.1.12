@@ -1,5 +1,11 @@
-year = int(input("Enter a year: "))
+# Look at the code in the editor – it only reads a year number, and needs to be completed with
+# the instructions implementing the test we've just described.
+# The code should output one of two possible messages, which are Leap year or Common year,
+# depending on the value entered.
 
+# Creates an input for the user to enter a year.
+year = int(input("Enter a year: "))
+# if argument to determine if input is within the Gregorian period.
 if year < 1582:
 	print("Not within the Gregorian calendar period")
 else:

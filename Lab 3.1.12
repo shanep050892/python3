@@ -1,19 +1,21 @@
-# Look at the code in the editor – it only reads a year number, and needs to be completed with
+# Look at the code in the editor it only reads a year number and needs to be completed with
 # the instructions implementing the test we've just described.
 # The code should output one of two possible messages, which are Leap year or Common year,
 # depending on the value entered.
 
-# Creates an input for the user to enter a year.
+# Creates an integer input for the user to enter a year.
 year = int(input("Enter a year: "))
 # if argument to determine if input is within the Gregorian period.
-if year < 1582:
+# defines that if the year is less than or equal to 1582 then it is not in the Gregorian period.
+if year <= 1582:
 	print("Not within the Gregorian calendar period")
 else:
+	# determines whether year is divisible by 4 (common year calculation)
 	if year % 4 != 0:
 		print("Common year")
+	# else if determines if year isn't divisible by 100 (leap year calculation)
 	elif year % 100 != 0:
 		print("Leap year")
+	# else if determines if year isn't divisible by 400 (common year calculation)
 	elif year % 400 != 0:
 		print("Common year")
-	else:
-		print("Leap year")

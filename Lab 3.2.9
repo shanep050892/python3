@@ -1,0 +1,10 @@
+# Design a program that uses a while loop
+# and continuously asks the user to enter a word unless the user enters "monster".
+
+# while statement to define if user has entered correct word to exit loop.
+while True:
+	user_input = input("Enter a word: ")
+ # if statement to determine what program will do if correct word is entered.
+	if user_input.lower() == "monster":
+		print("You've successfully left the loop")
+		break

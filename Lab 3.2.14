@@ -1,0 +1,21 @@
+# Number of blocks in current pyramid
+
+def calc_pyramid_height(blocks):
+    height = 0
+    current_level = 1
+# while statement to determine how high the pyramid can be built.
+    while blocks >= current_level:
+        height += 1
+        blocks -= current_level
+        current_level += 1
+
+    return height
+
+# Input number of blocks
+
+blocks = int(input("Enter number of blocks:"))
+
+# Uses calc pyramid height to define pyramid height variable.
+pyramid_height = calc_pyramid_height(blocks)
+
+print(f"The height of the pyramid that can be built is: {pyramid_height}")

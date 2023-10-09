@@ -1,0 +1,20 @@
+secret_number = 777
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+# Statement to allow user input
+number = int(input ("Input number here:"))
+# while statement to manipulate output to user
+while number != secret_number:
+    print ("Ha Ha! You are stuck in my loop!")
+    number = int(input("Input number here:"))
+
+print ("Well done muggle! You are free now.")

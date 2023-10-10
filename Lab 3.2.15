@@ -1,5 +1,8 @@
+# Use python program to interpret Collatz' theory.
+# Below code uses Python mathematics to interpret collatz' theory into code.
 def collatz_theory(n):
     steps = 0
+    # While statement to calculate provided calculations from Skills for all.
     while n != 1:
         print (n)
         if n % 2 == 0:
@@ -8,8 +11,11 @@ def collatz_theory(n):
             n = 3 * n + 1
         steps += 1
     print(1)
+    # Return statement to put answer into steps variable.
     return steps
+# Below code allows user input and also outputs how many steps have been taken to reach 1.
 
+# Try command which tests code for errors.
 try:
     c0 = int(input("Enter non negative and non zero number"))
     if c0 <= 0:
@@ -17,5 +23,6 @@ try:
     else:
         steps = collatz_theory(c0)
         print(f"Number of steps taken to reach 1: {steps}")
+# Except command tells Python how to deal with error. 
 except ValueError:
     print ("Invalid input. Please enter a valid number.")

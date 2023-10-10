@@ -1,0 +1,21 @@
+def collatz_theory(n):
+    steps = 0
+    while n != 1:
+        print (n)
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    print(1)
+    return steps
+
+try:
+    c0 = int(input("Enter non negative and non zero number"))
+    if c0 <= 0:
+        print("Please enter a positive number.")
+    else:
+        steps = collatz_theory(c0)
+        print(f"Number of steps taken to reach 1: {steps}")
+except ValueError:
+    print ("Invalid input. Please enter a valid number.")

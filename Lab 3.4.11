@@ -18,12 +18,11 @@ print("Step 2:", beatles)
 members_to_add = ["Stu Sutcliffe", "Pete Best"]
 
 for member in members_to_add:
-	user_input = input(f"Do you want to add {member} to the list? (Yes/No)")
-	if user_input.lower() == "yes":
+	user_input = input(f"Do you want to add {member} to the list? (Y/N)")
+	if user_input == "y":
 		beatles.append(member)
 
 print ("Step 3:", beatles)
-
 
 # step 4: use the del instruction to remove Stu Sutcliffe and 
 # Pete Best from the list;
@@ -31,10 +30,7 @@ print ("Step 3:", beatles)
 del beatles [3]
 beatles.remove("Pete Best")
 
-
-
-print("step 4", beatles)
-
+print("Step 4", beatles)
 
 # step 5: use the insert() method to add Ringo Starr to the beginning of the list.
 
